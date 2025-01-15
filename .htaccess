@@ -1,0 +1,13 @@
+RewriteEngine on
+RewriteBase /
+
+php_flag magic_quotes_gpc off
+php_flag display_startup_errors off
+php_flag display_errors off
+php_flag output_buffering on
+php_flag register_globals off
+
+ErrorDocument 401 http://kino.local/errors/401.html
+ErrorDocument 403 http://kino.local/errors/403.html
+ErrorDocument 404 http://kino.local/errors/404.html
+ErrorDocument 500 http://kino.local/errors/500.html
